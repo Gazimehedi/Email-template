@@ -1,0 +1,327 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    EMAILL TEMPLATE
+Company Name: MEHEDI IT
+Version:    2.0.0
+Last change:    12/09/20 [fixed Float bug, vf]
+Author Name: GAZI MEHEDI HASAN
+Primary use:    EMAILL TEMPLATE
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+body{
+	font-family:Roboto;
+}
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+/*===================template=======================*/
+.main{
+	height: 550px;
+	width: 880px;
+	overflow:hidden;
+	margin:auto;
+	position: relative;
+	-webkit-box-shadow: 0 0 10px 3px #999;
+	box-shadow: 0 0 10px 3px #999;
+}
+.left-item .left-item-top{
+	max-width: 450px;
+	height:180px;
+	-webkit-box-shadow: 19px 20px 20px 0px #66666654;
+	box-shadow: 19px 20px 20px 0px #66666654;
+	-webkit-transform:skew(-20deg);
+	transform:skew(-20deg);
+	background: #fff;
+}
+.top-details{
+	-webkit-transform:skew(20deg);
+	transform:skew(20deg);
+	padding: 12px 17px;
+}
+.top-details h1{
+	font-size: 60px;
+}
+.top-details h4{
+	font-size: 31px;
+	letter-spacing: 1px;
+}
+.left-item-middle{
+	max-width: 465px;
+	height: 115px;
+	margin-left: -28px;
+	background:#000;
+	-webkit-transform:skew(-25deg);
+	transform:skew(-25deg);
+	position:relative;
+	z-index: 0;
+}
+.left-item-middle::before {
+    content: "";
+    width: 20px;
+    border-top: 20px solid #f95a66;
+    border-right: 20px solid #f95a66;
+    -webkit-transform: skew(40deg);
+    transform: skew(40deg);
+    position: absolute;
+    top: -20px;
+    right: 199px;
+}
+.left-item-middle::after {
+    content: "";
+    width: 20px;
+    border-top: 20px solid #f95a66;
+    border-right: 20px solid #f95a66;
+    -webkit-transform: skew(40deg);
+    transform: skew(40deg);
+    position: absolute;
+    bottom: -20px;
+    left: 203px;
+    z-index:0;
+}
+.middle-datails{
+	-webkit-transform:skew(25deg);
+	transform:skew(25deg);
+}
+.middle-datails h1{
+	font-size: 58px;
+	color:#fff;
+	padding: 23px 0;
+	margin-left: 50px;
+}
+.middle-top{
+	width: 226px;
+	height: 50px;
+	background:#D4222E;
+	-webkit-transform:skew(-5deg);
+	transform:skew(-5deg);
+	position:absolute;
+	top: -20px;
+	left: 30px;
+}
+.middle-top-details h3{
+	padding: 10px 10px;
+	-webkit-transform: skew(15deg);
+	transform: skew(15deg);
+	font-size: 26px;
+}
+.middle-bottom-details h3{
+	padding: 10px 10px;
+	-webkit-transform: skew(15deg);
+	transform: skew(15deg);
+	font-size: 26px;
+}
+.middle-bottom-details {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+.middle-bottom-details p{
+	line-height:1;
+	color:#fff;
+	font-size: 18px;
+	font-family: robotoo;
+	padding: 7px 0;
+}
+.middle-bottom{
+	width: 226px;
+	height: 50px;
+	background:#D4222E;
+	-webkit-transform:skew(5deg);
+	transform:skew(5deg);
+	position: absolute;
+	bottom: -20px;
+	right: 30px;
+	z-index: 2;
+	-webkit-box-shadow: 0px 1px 8px 0px #000;
+	box-shadow: 0px 1px 8px 0px #000;
+}
+.left-item{
+	display:inline-block;
+	position: absolute;
+	z-index: 10;
+}
+.left-item .left-item-bottom{
+	max-width: 450px;
+	height: 254px;
+	-webkit-transform:skew(20deg);
+	transform:skew(20deg);
+	background: #fff;
+	-webkit-box-shadow: 20px -18px 20px 0px #66666654;
+	box-shadow: 20px -18px 20px 0px #66666654;
+	position: absolute;
+	z-index: -1;
+}
+.left-bottom-details{
+	width: 460px;
+	-webkit-transform:skew(-20deg);
+	transform:skew(-20deg);
+	position: relative;
+	left: 8px;
+	z-index: 0;
+}
+.left-bottom-details h5 span{
+	font-size: 12px;
+	margin-left: -40px;
+	padding-bottom: 0px;
+	vertical-align: middle;
+}
+.bottom-middle{
+	border: 4px dashed #000;
+	margin-top: 10px;
+	border-radius: 5px;
+	padding: 10px 5px;
+	display: inline-block;
+	position: relative;
+}
+.bottom-middle h4{
+	margin-left:5px;
+	font-size: 20px;
+	line-height: 1.2;
+	display: inline-block;
+}
+.bottom-middle h4 span{font-size: 45px;}
+.bottom-middle-right h5{
+	font-size: 45px;
+	display: inline-block;
+	font-weight: 500;
+	color:#D4222E;
+}
+.bottom-middle-right p{display: inline-block;line-height: 1.2;margin-left: 5px;color:#D4222E}
+.bottom-middle-right h6{
+	font-size: 22px;
+	text-align: center;
+}
+#delete-line{
+	background: #D4222E;
+	width: 140px;
+	border: 1.5px solid #D4222E;
+	-webkit-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+	position: absolute;
+	bottom: 6px;
+	right: 34px;
+}
+.left-bottom{
+	max-width:450px;
+	position: relative;
+	left: -10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.logo img{
+	width: 250px;
+	height: 50px;
+	margin: 15px 1px;
+	margin-left: 5px;
+}
+.contact-info{
+	margin: 20px 0px;
+}
+.contact-info ul li{
+	font-weight:bold;
+	font-size: 16px;
+}
+.contact-info ul li .svg-inline--fa{
+	margin: 0px 5px;
+	border:1px solid #000;
+	border-radius:50%;
+	padding: 2px;
+}
+.right-item{
+	width: 425px;
+	display: inline-block;
+}
+.right-item #right-bg{
+	max-width: 500px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index:0;
+}
+.right-top img {
+    width: 300px;
+    float: right;
+    margin-top: 15px;
+    position:absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+.right-middle {
+    position: absolute;
+    right: 0;
+    bottom: 76px;
+}
+.right-middle h2 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+
+element.style {
+}
+.right-middle h2 {
+    font-size: 26px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    right: 0;
+    margin-top: 22px;
+    margin-right: 10px;
+}
+.right-middle img {
+    height: 76px;
+}
+.right-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+}
+.right-bottom h2 {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    right: 0;
+    margin-top: 19px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.right-bottom img {
+    height: 65px;
+}
